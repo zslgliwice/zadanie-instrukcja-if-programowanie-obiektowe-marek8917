@@ -26,7 +26,15 @@
 			var a = document.getElementById('a').value;
 			var b = document.getElementById('b').value;
 			var c = document.getElementById('c').value;
+			var wyn = document.getElementById("wynik");
 			
+			wyn.innerHTML= "<p>Najmniejsza: "+Math.min(a, b, c)+"</p>";
+			wyn.innerHTML+= "<p>Największa: "+Math.max(a, b, c)+"</p>";
+			wyn.innerHTML+= "<p>Wartość bezwzględna: "+Math.abs(a)+" "+Math.abs(b)+" "+Math.abs(c)+" "+"</p>";
+			
+			if(a%2==0){wyn.innerHTML+="<p>liczba a jest parzysta</p>"}
+			if(b%2==0){wyn.innerHTML+="<p>liczba b jest parzysta</p>"}
+			if(c%2==0){wyn.innerHTML+="<p>liczba c jest parzysta</p>"}
 			
 		}
 
