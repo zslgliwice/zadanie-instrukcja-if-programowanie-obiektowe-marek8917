@@ -22,7 +22,9 @@
 		function teleturniej()
 		{
 			var lucky = Math.floor(Math.random() * 3) + 1;
-			
+			var wyn = document.getElementById("wynik");
+			var bra = (document.getElementById('bramka').value==lucky)? wyn.innerHTML="Hurra! W bramce nr "+lucky+" jest samochód!" : wyn.innerHTML="Niestety! Samochód znajdował się w bramce nr "+lucky;
+
 		}
 
 	</script>
