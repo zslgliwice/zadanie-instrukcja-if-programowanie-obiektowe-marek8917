@@ -21,7 +21,17 @@
 	
 		function ktora_cwiartka()
 		{
-			
+			var x = document.getElementById("x").value;
+			var y = document.getElementById("y").value;
+			var wyn = document.getElementById("wynik");
+
+			if(x==0 && y==0){wyn.innerHTML = "Punkt P=(0,0) jest początkiem układu współrzędnych";}
+			else if(x==15 && y==96){wyn.innerHTML = "René Descartes urodził się 31 marca 1596 roku w La Haye en Touraine we Francji. Jego wczesna edukacja miała miejsce w jezuickim College Royal Henry-Le-Grand, gdzie zdobył solidne podstawy w matematyce i filozofii. Po studiach podróżował po Europie, uczestnicząc także w kampaniach wojennych.<br>Descartes zasłynął przede wszystkim jako filozof i matematyk. Jego prace w dziedzinie matematyki, zwłaszcza w geometrii analitycznej, odegrały kluczową rolę w rozwoju tej dziedziny. W 1637 roku opublikował 'Rozprawę o metodzie', gdzie sformułował zasadę 'Cogito, ergo sum' (Myślę, więc jestem), uznawaną za fundament filozofii kartezjańskiej.<br>Descartes zmarł 11 lutego 1650 roku w Sztokholmie, gdzie spędził ostatnie lata życia, będąc gościem królowej Krystyny Szwecji. Jego dziedzictwo obejmuje wpływowe dzieła filozoficzne i matematyczne, które wywarły istotny wpływ na rozwój nauki i myśli filozoficznej.";}
+			else if(x==0 || y==0){wyn.innerHTML = "Punkt leży na jednej z osi układu";}
+			else if(x>0 && y>0){wyn.innerHTML = "Punkt leży na pierwszej ćwiartce";}
+			else if(x>0 && y<0){wyn.innerHTML = "Punkt leży na czwartej ćwiartce";}
+			else if(x<0 && y>0){wyn.innerHTML = "Punkt leży na drugiej ćwiartce";}
+			else if(x<0 && y<0){wyn.innerHTML = "Punkt leży na trzeciej ćwiartce";}
 			
 		}
 
