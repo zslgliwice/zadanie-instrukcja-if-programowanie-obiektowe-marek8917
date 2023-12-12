@@ -22,8 +22,16 @@
 	
 		function sprawdz()
 		{
+			var imi = document.getElementById("imie").value;
+			var wie = document.getElementById("wiek").value;
+			var wyn = document.getElementById("wynik");
 			
-			
+			if(imi=="Brad" && wie>=18){wyn.innerHTML = "Może wziąć udział za darmo"}
+			else if(imi=="Morgan" && wie>=18){wyn.innerHTML = "Może wziąć udział za darmo"}
+			else if(wie<16){wyn.innerHTML = "Nie może wziąć udziału w seansie"}
+			else if(wie>=16 && wie<=17){wyn.innerHTML = "Może wziąć udział, jeśli jest z opiekunem za 12 zł"}
+			else if(wie>=18){wyn.innerHTML = "Może wziąć udział za 18 zł"}
+
 		}
 
 	</script>
